@@ -1,0 +1,398 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+  
+header{
+  background-color: #262626;
+  font-weight: bold;
+}
+  
+li{
+  list-style: none;
+}
+  
+a{
+  color: white;
+  text-decoration: none;
+}
+  
+.container{
+  max-width: 1224px;
+  width: 92%;
+  margin: 0 auto;
+}
+  
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.nav-branding{
+  font-size: 2rem;
+}
+  
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+  
+.nav-link{
+  transition: 0.3s ease-out;
+}
+  
+.nav-link:hover{
+  color: dodgerblue;
+}
+  
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+  
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+  
+@media(max-width:1024px){
+  .hamburger{
+  display: block;
+}
+  
+.hamburger.active .bar:nth-child(2){
+  opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+}
+  
+.nav-menu{
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #262626;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+  
+.nav-item{
+  margin: 16px 0;
+}
+  
+.nav-menu.active{
+  left: 0;
+}
+}
+  
+
+
+  
+button{
+  padding: 8px;
+  width: 100px;
+  border: 2px solid white;
+  background-color:#262626 ;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.1s;
+  opacity: 0.9;
+}
+  
+.container1{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  font-size: x-large;
+}
+  
+.hry {
+  display: flex;
+  width: 400%;
+  box-sizing: border-box;	
+}
+  
+.strana {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.7s;
+  color: white;
+}
+  
+.jedna{
+  background: url(../img/alan.webp);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-size: 75%;
+}
+  
+.dva{
+  background: url(../img/baldur.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-size: 75%;
+}
+  
+.tri{
+  background: url(../img/zelda.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-size: 75%;
+}
+
+.footer{
+  font-size: large;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  border: none;
+  background-color: #262626;
+}
+
+.kontakt-sekcia{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top:50px ;
+  padding-bottom:218px ;
+}
+
+.kontakt-info{
+  color: white;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 18px;
+}
+
+.kontakt-info i{
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.kontakt-form{
+  max-width: 700px;
+  margin-right: 50px;
+}
+
+.kontakt-info, .kontakt-form{
+  flex: 1;
+}
+
+.kontakt-form h2{
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.kontakt-form .textovepole{
+  background: black;
+  color: white;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.kontakt-form textarea{
+  background: black;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.odoslat{
+  padding: 8px;
+  width: 100px;
+  border: 2px solid white;
+  background-color:#262626 ;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.1s;
+  opacity: 0.9;
+}
+
+.footer-kontakt{
+  font-size: large;
+  color: white;
+  text-align: center;
+  padding: 3px;
+  border: none;
+  background-color: #262626;
+  padding-top: 12px;
+}
+
+body{
+  background-image: url(../img/Awards.jpg);
+}
+
+.kategorie{
+  color: white;
+  text-align: center;
+  padding: 80px;
+  font-size: 70px;
+}
+
+.akordeon-container {
+  max-width: 75%;
+  max-height: 10%;
+  margin: 20px auto;
+  padding-top: 80px;
+  padding-bottom: 191px;
+}
+
+.akordeon {
+  border: 1px solid white;
+  background-color: #262626;
+  margin-bottom: 10px;
+}
+
+.kategoria {
+  background-color: #262626;
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.vyherca {
+  display: none;
+  padding: 10px;
+  color: white;
+}
+.kategs{
+  background-image: url(../img/Awards.jpg);
+}
+
+.dakujem-body{
+  background-color: #262626;
+}
+
+.dakujem{
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  border: white solid;
+  border-radius: 20px;
+  background-color: black;
+  opacity: 0.9;
+  margin-top: 350px;
+  padding:20px;
+  margin-left:100px ;
+  margin-right: 100px ;
+}
+
+.container-bd {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 1500px;
+  border: white solid;
+  border-radius: 20px;
+  padding: 3px;
+  background-color: black;
+  opacity: 0.9;
+  margin-right: 330px;
+}
+
+.baldur1 {
+  max-width: 100%;
+  margin-right: 20px; 
+  padding-left: 60px;
+}
+
+.baldur1text {
+  color: white;
+  padding-right: 150px;
+  padding-left: 200px;
+  font-size: larger;
+}
+
+.container-aw {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 1500px;
+  border: white solid;
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 330px; 
+  background-color: black;
+  opacity: 0.9;
+}
+.aw1{
+  max-width: 100%;
+  height: auto;
+  padding-left: 60px;
+}
+
+.aw1text{
+  color: white;
+  padding-left: 300px;
+  padding-right: 200px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+ }
+
+.container-zd{
+  display: flex;
+  align-items: center;
+  height: 400px;
+  width: 1500px;
+  border: white solid;
+  border-radius: 20px;
+  padding: 3px;
+  margin-left: 330px;
+  background-color: black;
+  opacity: 0.9;
+}
+
+.zelda1{
+  max-width: 100%;
+  height: auto;
+  padding-left: 60px;
+}
+
+.zelda1text{
+  color: white;
+  padding-left: 300px;
+  padding-right: 200px;
+  font-size:larger;
+}
