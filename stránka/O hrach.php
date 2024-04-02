@@ -30,14 +30,7 @@
 
     </main>
 
-
-
-    <footer class="footer">
-        <hr class="footer">
-        <p class="footer">autor: Henrich Čaniga </p>
-        &copy; copyright <br>
-    </footer>
-
+    <?php include "./suciastky/footer.php"?>
 
     <script src="js/js.js"></script>
 </body>
