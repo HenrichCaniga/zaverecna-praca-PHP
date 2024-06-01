@@ -12,6 +12,10 @@
         <li class="nav-item">
           <a href="kategorie.php" class="nav-link">KATEGÓRIE</a>
         </li>
+        <li class="nav-item">
+          <a href="registracia.php" class="nav-link">REGISTRACIA</a>
+          <li class="nav-item">
+          <a href="Prihlasenie.php" class="nav-link">PRIHLASENIE</a>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
