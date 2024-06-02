@@ -12,6 +12,16 @@ class Signup extends Dbh {
             header("location: ../index.php?error=stmtfailed");
             exit();
         }
+        else { 
+            $stmt = $this->connect()->prepare('SELECT * FROM uzivatelia WHERE uzivatelia_uid = ?');
+            $stmt->execute([$uid]);
+            $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+            session_start();
+            $_SESSION["userid"] = $user[0]["uzivatelia_id"];
+            $_SESSION["useruid"] = $user[0]["uzivatelia_uid"];
+            $stmt = null; 
+        }
 
         $stmt = null; 
     }

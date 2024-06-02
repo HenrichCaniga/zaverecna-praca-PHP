@@ -12,24 +12,26 @@
         <li class="nav-item">
           <a href="kategorie.php" class="nav-link">KATEGÓRIE</a>
         </li>
-      <?php
-        if(isset($_SESSION["userid"])){
-          ?>
+
+        <li class="nav-item">
+          <a href="hlasovat.php" class="nav-link">HLASOVAT</a>
+        </li>
+
+        <?php if(isset($_SESSION["userid"])) { ?>
           <li class="nav-item">
-          <a href="#" class="nav-link"><?php echo $_SESSION["useruid"]; ?></a>
+            <a href="#" class="nav-link"><?php echo $_SESSION["useruid"]; ?></a>
+          </li>
           <li class="nav-item">
-          <a href="includes/logout.inc.php" class="nav-link">ODHLASIT</a>
-          <?php
-        }
-          else{
-            ?>
-                    <li class="nav-item">
-          <a href="registracia.php" class="nav-link">REGISTRACIA</a>
+            <a href="inc/odhlasenie-i.php" class="nav-link">ODHLÁSIŤ</a>
+          </li>
+        <?php } else { ?>
           <li class="nav-item">
-          <a href="Prihlasenie.php" class="nav-link">PRIHLASENIE</a>
-          <?php
-          }
-          ?>
+            <a href="registracia.php" class="nav-link">REGISTRÁCIA</a>
+          </li>
+          <li class="nav-item">
+            <a href="Prihlasenie.php" class="nav-link">PRIHLÁSENIE</a>
+          </li>
+        <?php } ?>
       </ul>
       <div class="hamburger">
         <span class="bar"></span>
@@ -37,5 +39,6 @@
         <span class="bar"></span>
       </div>
     </nav>
- </div>
+  </div>
 </header>
+

@@ -13,7 +13,7 @@
         <div class="card shadow-sm p-4" style="background-color:#262626">
             <div class="index-login-signup">
                 <h4 class="text-center mb-4" style="color: white">Registracia</h4>
-                <form action="includes/signup.inc.php" method="post">
+                <form action="inc/register-i.php" method="post">
                     <div class="form-group">
                         <input type="text" class="form-control" name="uid" placeholder="Meno" required>
                     </div>

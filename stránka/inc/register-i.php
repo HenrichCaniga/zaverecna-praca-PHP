@@ -6,9 +6,9 @@ if (isset($_POST["submit"])) {
     $email = $_POST["email"];
 
 
-    include "../classes/dbh.classes.php";
-    include "../classes/signup.classes.php";
-    include "../classes/signup-contr.classes.php";
+    include "../triedy/databaza.php";
+    include "../triedy/register-triedy.php";
+    include "../triedy/register-triedy-c.php";
     
     $signup = new SignupContr($uid, $pwd, $pwdRepeat, $email);
 

@@ -170,6 +170,10 @@ button{
   padding: 3px;
   border: none;
   background-color: #262626;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 .kontakt-sekcia{
@@ -396,5 +400,16 @@ body{
   padding-right: 200px;
   font-size:larger;
 }
+.custom-btn {
+  background-color: #262626; /* Príklad vlastnej farby tlačidla */
+  border: none;
+  color: white; /* Farba textu */
+}
+
+.custom-btn:hover {
+  background-color: #1a1a1a; /* Farba pri hover */
+}
+
+
 
 

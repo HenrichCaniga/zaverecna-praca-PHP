@@ -19,14 +19,15 @@ class Login extends Dbh {
         }
 
 
-        $pwdHashed = $stmt-> fetchAll(PDO::FETCH_ASSOC);
-        $chechPwd = password_verify($pwd, $pwdHashed[0]["uzivatelia_pwd"]);
+    $pwdHashed = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $checkPwd = password_verify($pwd, $pwdHashed[0]["users_pwd"]);
 
-        if($checkPwd == false){
-            $stmt = null;
-            header("location: ../index.php?error=usernotfound");
-            exit();
-        }
+        if($checkPwd == false)
+    {
+        $stmt = null;
+        header("location: ../index.php?error=wrongpwd");
+        exit();
+    }
         elseif($checkPwd == true){
             $stmt = $this->connect()->prepare("SELECT * FROM uzivatelia WHERE uzivatelia_uid = ? OR uzivatelia_email = ? AND uzivatelia_pwd = ?;");
 

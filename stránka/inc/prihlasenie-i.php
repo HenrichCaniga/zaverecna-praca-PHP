@@ -3,9 +3,9 @@ if (isset($_POST["submit"])) {
     $uid = $_POST["uid"];
     $pwd = $_POST["pwd"];
 
-    include "../classes/dbh.classes.php";
-    include "../classes/login.classes.php";
-    include "../classes/login.contr.classes.php"; 
+    include "../triedy/databaza.php";
+    include "../triedy/prihlasenie-triedy.php";
+    include "../triedy/prihlasenie-triedy-c.php"; 
     
     $login = new LoginContr($uid, $pwd);
 
