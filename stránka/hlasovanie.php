@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once 'classes/dbh.classes.php';
+require_once 'triedy/databaza.php';
 
 $dbh = new Dbh();
 
@@ -20,7 +20,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['moznost'])) {
     $_SESSION['hlasovanie_sprava'] = "Prosím, vyberte možnosť na hlasovanie.";
 }
 
-header("Location: index.php");
+header("Location: hlas.php");
 exit();
 ?>
+
+
 

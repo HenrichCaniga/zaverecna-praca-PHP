@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hostiteľ: 127.0.0.1
--- Čas generovania: Sun 02.Jún 2024, 18:13
+-- Čas generovania: Po 10.Jún 2024, 02:23
 -- Verzia serveru: 10.4.32-MariaDB
 -- Verzia PHP: 8.2.12
 
@@ -38,9 +38,9 @@ CREATE TABLE `hlasovanie` (
 --
 
 INSERT INTO `hlasovanie` (`id`, `moznost`, `hlasy`) VALUES
-(1, 'Alan Wake 2', 1),
-(2, 'Baldur’s Gate 3', 0),
-(3, 'The Legend of Zelda: Tears of the Kingdom', 0);
+(2, 'Baldur’s Gate 3', 38),
+(3, 'The Legend of Zelda: Tears of the Kingdom', 39),
+(4, 'Alan Wake 2', 15);
 
 -- --------------------------------------------------------
 
@@ -70,7 +70,9 @@ INSERT INTO `uzivatelia` (`uzivatelia_id`, `uzivatelia_uid`, `uzivatelia_pwd`, `
 (8, 'lukas', '$2y$10$gqbU88ILFAZLaBDOyU9/A.j2VfKDT6cAStY1PzPXCIcYyG9YzpSiu', 'lukas@lukas.sk'),
 (9, 'idk', '$2y$10$syIPKK8mT.2u9BfY2tL2teVw9UzwLxAgnRpm4gDnxvWIDvHtP/XXW', 'idk@idk.sk'),
 (10, 'dano', '$2y$10$zE/Kz9PVCotYa70KRhsYbOStgDb0OF6BD0VAVvwBSn7EhzSnZIsWy', 'dano@dano.sk'),
-(11, 'jakub', '$2y$10$G5zfyhAAiP4assjESwnYReLTosaf1P8Vw7XobA6vVSIs8EC64wN12', 'jakub@jakub.sk');
+(11, 'jakub', '$2y$10$G5zfyhAAiP4assjESwnYReLTosaf1P8Vw7XobA6vVSIs8EC64wN12', 'jakub@jakub.sk'),
+(12, 'Ivan', '$2y$10$jWgb72m.AnxwWcwV0/1YNeXR67sZmjmyhAxvrrAhB5lO9dRRa8GTO', 'ivan@ivan.sk'),
+(13, 'Horton', '$2y$10$TdMqfEBiSWgl57LTpQh1DOPzRvPSD5915nEEtm.nh3mFjGFv6IIG.', 'Horton@Horton.sk');
 
 --
 -- Kľúče pre exportované tabuľky
@@ -96,13 +98,13 @@ ALTER TABLE `uzivatelia`
 -- AUTO_INCREMENT pre tabuľku `hlasovanie`
 --
 ALTER TABLE `hlasovanie`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT pre tabuľku `uzivatelia`
 --
 ALTER TABLE `uzivatelia`
-  MODIFY `uzivatelia_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `uzivatelia_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -14,7 +14,7 @@
         <div class="card shadow-sm p-4" style="background-color:#262626">
             <div class="index-login-login">
                 <h4 class="text-center mb-4" style="color: white">Prihlasenie</h4>
-                <form action="inc/prihlasenie-i.php" method="post">
+                <form action="inc/prihlasenie-i.php" method="post" onsubmit="return validateForm();">
                     <div class="form-group">
                         <input type="text" class="form-control" name="uid" placeholder="Meno" required>
                     </div>
@@ -28,7 +28,7 @@
     </section>
 
     <?php include "./suciastky/footer.php"?>
-
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
